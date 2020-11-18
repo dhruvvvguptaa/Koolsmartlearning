@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron jumbotron-fluid heading-container">
+    <div class="container-fluid">
+        <h1>ARYABHATTA VIDEOS</h1>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <h1 style="font-weight: bolder;">About Aryabhatta Exam</h1>
+                </div>  
+            </div>
+            <div class="row" style="padding: 2%;">
+                <div class="col-md-12">
+                    <img style="float: right; margin: 0px 15px 15px 0px; max-width: 30%; max-height: fit-content;" src="https://www.koolsmartlearning.com/wp-content/uploads/2019/02/Aryabhatta-4.png"  />
+
+                    <p style="padding-bottom: 1%;"><strong>Aryabhatta Inter-School Mathematics Competition</strong> is conducted by Summer Fields School, Kailash Colony,
+                         New Delhi. This exam is being conducted for class 5 & 8 since the very beginning & it has now started for Class XI also from 2017.
+                           This exam is one of the most prestigious competition in Mathematics and young Maths enthusiasts from various schools (mainly Delhi, NCR) 
+                           look forward to participating in the competition.</p>
+                    <p style="padding-bottom: 1%;">The competition challenges and sharpens the students’ analytical skills along with their mathematical capabilities.
+                         It helps the students identify their love for the subject and also teaches them the practical application of Maths.<br>
+                        Please <a style="color: tomato;" href="http://summerfields.co.in/aryabhatta/" target="_blank">click here</a> to know more about the organizers and the exam.</p>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <a class="btn btn-primary" style="border-radius: 25px;" href="/keys-and-solutions"><h3>Aryabhatta Keys & Solutions</h3></a>
+                </div>
+            </div>
+            <div class="row" style="padding: 2%;">
+                <div class="col-md-12">
+                    <h1 style="font-weight: bolder; padding-top: 2%; padding-bottom: 2%;">Videos on Aryabhatta Exam</h1>
+                    <p><strong>The videos on Aryabhatta Exam</strong> talk about the nature and level of the exam and also give tips
+                        on how to prepare for the same. Solutions to some selected questions from Previous Year Papers
+                        have also been explained in these videos.</p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 2%;">
+                <% videos.forEach(function(video){ %>
+                    <div class="col-md-4">
+                        <a href="<%=video.VideoLink%>" target="_blank">
+                            <img class="link-images" src="<%=video.ImageSource%>">
+                            <p class="img-text"><%=video.Title%></p>
+                        </a>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>
+
+</body> 
+</html>  

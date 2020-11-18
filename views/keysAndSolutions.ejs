@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron jumbotron-fluid heading-container">
+    <div class="container-fluid">
+        <h1>ARYABHATTA KEYS & SOLUTIONS</h1>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="row" style="margin-left: 2%; margin-right: 2%;">
+        <div class="col-md-6 forClass5">
+            <a>
+                <img class="link-images fadedImage" src="https://www.koolsmartlearning.com/wp-content/uploads/2019/05/Class-5.jpg">
+                <p class="img-text">Class 5</p>
+            </a>
+        </div>
+        <div class="col-md-6 forClass8">
+            <a>
+                <img class="link-images fadedImage" src="https://www.koolsmartlearning.com/wp-content/uploads/2019/05/Class-8.jpg" style="opacity: 50%;">
+                <p class="img-text">Class 8</p>
+            </a>
+        </div>
+        <!-- <div class="col-md-4 forClass11">
+            <a>
+                <img class="link-images fadedImage" src="https://www.koolsmartlearning.com/wp-content/uploads/2019/05/Class-11.jpg" style="opacity: 50%;">
+                <p class="img-text">Class 11</p>
+            </a>
+        </div> -->
+    </div>
+    <div class="row" style="background-color: #ebb223; margin: 2% 0;">
+        <div class="col-md-6" style="text-align: left; padding-left: 4%;">
+            <h1 id="currentClass">Class 5</h1>
+            <input type="hidden" id="preselectedTopic" value="<%=preselectedTopic%>">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="sidenav">
+                <p class="topicHeading" style="color: blue;">TOPICS</p>
+                <div class="forTopics">
+                    <% topics.forEach(function(topic){ %>
+                        <a class="topic"><%=topic%></a>
+                        <hr>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <h1 id="topicName">Hi theree</h1>
+            <div class="row" id="videos">      
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
+<script src="js/keysAndSolutions.js"></script>
+
+</body> 
+</html>  

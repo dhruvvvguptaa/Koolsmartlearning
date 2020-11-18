@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+
+
+<div class="jumbotron jumbotron-fluid heading-container">
+    <div class="container-fluid">
+        <h1>TIPS AND TRICKS</h1>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <h1 style="font-weight: bolder;">Maths Tips & Tricks</h1>
+                </div>  
+            </div>
+            <div class="row" style="padding: 2%;">
+                <div class="col-md-12">
+                    <img style="float: right; margin: 0px 15px 15px 0px; max-width: 30%; max-height: fit-content;" src="https://www.koolsmartlearning.com/wp-content/uploads/2020/02/TipsTricksWebsite.png"  />
+
+                    <p style="padding-bottom: 1%;">Maths is an integral part of our lives in ways we don’t even notice.
+                        Whether we love Maths or not, we find ourselves invariably using it
+                        everyday in some or the other way.</p>
+                    <p style="padding-bottom: 1%;">In this Section, we will learn useful Tips & Tricks which will enable us to solve 
+                        daily life problems more efficiently. These will help us in improving our mathematical 
+                        skills where solving maths problems become fun, easy and surely impressive!</p>
+                    <p style="padding-bottom: 1%;">This video series will include plethora of techniques like quick ways of calculation,
+                         fragmenting large problems into smaller & more manageable ones, and so on. But to
+                          achieve these results, it is important that we practice these tricks regularly till
+                           they become our habitual way of solving.</p>
+                </div>    
+            </div>
+            <div class="row" style="background-color: #ebb223;">
+                <div class="col-md-6" style="text-align: left; padding-left: 4%;">
+                    <h1>Tips And Tricks</h1>
+                </div>
+                <div class="col-md-6" style="text-align: right; padding-right: 4%;">
+                    <h1><%=count%> Videos</h1>
+                </div>
+            </div>
+            <div class="row">
+            <% videos.forEach(function(video){ %>
+                <div class="col-md-3">
+                    <a href="<%=video.VideoLink%>" target="_blank">
+                        <img class="link-images" src="<%=video.ImageSource%>" loading="lazy">
+                        <p class="img-text"><%=video.Title%></p>
+                    </a>
+                </div>
+            <% }) %>
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+
+
+<%- include('partials/footer') %>
+
+</body> 
+</html>  
